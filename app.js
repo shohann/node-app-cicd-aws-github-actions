@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 3000;
 
 // Health check route
 app.get("/health", (req, res) => {
-  res.status(200).json({ status: "UP", message: "Service is running" });
+  res.status(200).json({ status: "UP", message: "Service is running UPDATE" });
 });
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT} UPDATE`);
+  console.log(`Server is running on port ${PORT} `);
 });
