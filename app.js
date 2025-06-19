@@ -13,5 +13,5 @@ app.get("/health", (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Node 3 Server is running on port ${PORT}`);
+  console.log(`Node Server is running on port ${PORT}`);
 });
