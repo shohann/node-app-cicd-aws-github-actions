@@ -20,4 +20,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
-      - run:  run: pm2 start app.js --name my-app
+      - run: pm2 start app.js --name my-app
