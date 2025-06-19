@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 // Health check route
 app.get("/health", (req, res) => {
-  res.status(200).json({ status: "UP", message: "Service is running UPDATE" });
+  res.status(200).json({ status: "UP", message: "Service is running" });
 });
 
 // Start the server
