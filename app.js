@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 
 // Initialize the app
 const app = express();
@@ -8,7 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 // Health check route
 app.get("/health", (req, res) => {
-  res.status(200).json({ status: "UP", message: "Service is running" });
+  res
+    .status(200)
+    .json({ status: "UP", message: "Service is running", port: PORT });
 });
 
 // Start the server
